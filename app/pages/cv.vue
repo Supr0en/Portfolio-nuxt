@@ -5,7 +5,7 @@
          <div id="header" class="sm:grid sm:grid-cols-2 sm:grid-rows-4">
             <p class="text-xl font-bold">Ruotsalaienen Erik Alexander</p>
             <p class="sm:text-right hidden sm:block">Ryytimaantie</p>
-            <p>Softwate Developer</p>
+            <p>Software Developer</p>
             <div class="sm:text-right"><p class="block sm:hidden">Ryytimaantie, Vantaa</p><p class="hidden sm:block">Vantaa</p></div>
             <p></p>
             <p class="sm:text-right">erik.ruotsalainen1@gmail.com</p>
@@ -14,9 +14,9 @@
          <hr class="border-1 border-black">
          <div id="profile">
             <p class="text-md font-bold">Profile</p>
-            <p>I am 21 years old Software developer from Vantaa. I am interested in learning
+            <p>I am 21 years old Software Developer from Vantaa. I am interested in learning
                more in my field and i get easily along with new group and others. I graduated as 
-               Software developer (Information- and communication undergraduate degree) at 
+               Software Developer (Information- and communication undergraduate degree) at 
                Business College Helsinki in 2.6.2023. Currently I am 2nd year student at Haaga
                Helia University of Applied Sciences. My previous hobbies have been Volleyball 
                for 5 years and Floorball for one season before quitting to focus on last years of 
@@ -28,7 +28,7 @@
          </div>
          <hr class="border-1 border-black">
          <div id="devstack">
-            <p class="text-md font-bold">Software development languages & libraries </p>
+            <p class="text-md font-bold">Software Development languages & libraries </p>
             <div class="lg:w-[60%] ml-1/2 float-right">
                <p>JavaScript & TypeScript, NodeJs, React/React 
                Native, Express, HTML, CSS, SQL/NoSQL and 
@@ -49,7 +49,7 @@
                implementing and publishing the Webhook 
                executor project to GitHub and npm. Work also 
                included testing and development of the Komu 
-               application. Software development languages 
+               application. Software Development languages 
                and techniques used in the work: JavaScript & 
                TypeScript, React & React Native, NodeJs and 
                Express. Github, Firebase, MongoDB, Expo, 
@@ -64,7 +64,7 @@
          <div id="header" class="sm:grid sm:grid-cols-2 sm:grid-rows-4">
             <p class="text-xl font-bold">Ruotsalaienen Erik Alexander</p>
             <p class="sm:text-right hidden sm:block">Ryytimaantie</p>
-            <p>Softwate Developer</p>
+            <p>Software Developer</p>
             <div class="sm:text-right"><p class="block sm:hidden">Ryytimaantie, Vantaa</p><p class="hidden sm:block">Vantaa</p></div>
             <p></p>
             <p class="sm:text-right">erik.ruotsalainen1@gmail.com</p>
