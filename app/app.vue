@@ -1,21 +1,45 @@
 <template>
-   <div class="blueprint"></div>
+   <div :class="currentClass">
+      <img src="./assets/owlglow.svg" alt="owl svg" class="w-[100px] h-[200px] absolute top-[20%] left-[89%]" :class="{ hidden: !nightMode }"/>
+      <img src="./assets/customstarsglow.svg" alt="cluster of stars" class="w-[200px] h-[200px] absolute top-[10%] left-[77%]" :class="{ hidden: !nightMode }" />
+      <img src="./assets/Suproentextglow.svg" alt="Supr0en text" class="w-[450px] h-[200px] absolute top-[76%] left-[6%]" :class="{hidden: !nightMode}" />
+   </div>
    <div id="app">
       <Header />
-      <nuxt-page />
-      <Footer />
+      <nuxt-page :nightMode="nightMode"/>
+      <button @click="toggleNightMode" class="fixed top-[950px] left-[1850px] w-[50px] h-[50px] border rounded-full"><img :src="buttonSideImageSrc" /></button>
+      <Footer :nightMode="nightMode" />
    </div>
 </template>
 
 <script>
 import Header from '~/components/Header.vue';
 import Footer from '~/components/Footer.vue';
-
+import dayImage from '@/assets/daymodebutton.svg';
+import nightImage from '@/assets/nightmodebutton.svg';
 export default {
-  components: {
-    Header,
-    Footer
-  }
+   components: {
+      Header,
+      Footer
+   },
+   data() {
+      return {
+         nightMode: false,
+      };
+   },
+   computed: {
+      currentClass() {
+         return this.nightMode ? 'blueprint-nightmode' : 'blueprint';
+      },
+      buttonSideImageSrc() {
+         return this.nightMode ? dayImage : nightImage; 
+      }
+   },
+   methods: {
+      toggleNightMode() {
+         this.nightMode = !this.nightMode;
+      } 
+   }
 };
 </script>
 <style>
@@ -34,5 +58,20 @@ export default {
                      linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
    background-size: 50px 50px; /* Spacing of lines */
    z-index: 0;
+   pointer-events: none;
 }
+.blueprint-nightmode {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #0d0d24;
+   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                     linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+   background-size: 50px 50px;
+   z-index: 0;
+   pointer-events: none;
+}
+
 </style>

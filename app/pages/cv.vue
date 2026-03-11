@@ -1,7 +1,7 @@
 <template>
    <div class="flex flex-col xl:flex-row xl:gap-[80px] xl:mt-10 justify-center items-center">
-      <nuxt-link id="button" class="sticky xl:absolute px-4 py-1 rounded border-2 border-solid xl:mt-20 m-4 top-4 hover:border-black" to="/">Back</nuxt-link>
-      <div class="h-fit w-[100vw] sm:h-[1123px] sm:w-[794px] shadow flex flex-col py-4 px-12 sm:py-8 sm:px-24 mb-10 mt-4 bg-white">
+      <nuxt-link id="button" class="sticky xl:absolute px-4 py-1 rounded border-2 border-solid xl:mt-20 m-4 top-4 hover:border-black" :class="{'text-white': nightMode}" to="/">Back</nuxt-link>
+      <div class="h-fit w-[100vw] sm:h-[1123px] sm:w-[794px] shadow flex flex-col py-4 px-12 sm:py-8 sm:px-24 mb-10 mt-4 bg-white" :class="{'shadow-white': nightMode}">
          <div id="header" class="sm:grid sm:grid-cols-2 sm:grid-rows-4">
             <p class="text-xl font-bold">Ruotsalaienen Erik Alexander</p>
             <p class="sm:text-right hidden sm:block">Ryytimaantie</p>
@@ -60,7 +60,7 @@
          <hr class="border-1 border-black">
          <p>Date: 8.3.2026</p>
       </div>
-      <div class="h-fit w-[100vw] sm:h-[1123px] sm:w-[794px] shadow flex flex-col py-4 px-12 sm:py-8 sm:px-24 mb-10 mt-4 bg-white">
+      <div class="h-fit w-[100vw] sm:h-[1123px] sm:w-[794px] shadow flex flex-col py-4 px-12 sm:py-8 sm:px-24 mb-10 mt-4 bg-white" :class="{'shadow-white': nightMode}">
          <div id="header" class="sm:grid sm:grid-cols-2 sm:grid-rows-4">
             <p class="text-xl font-bold">Ruotsalaienen Erik Alexander</p>
             <p class="sm:text-right hidden sm:block">Ryytimaantie</p>
@@ -104,7 +104,13 @@ export default  {
       return {
          title: 'CV'
       };
-   }
+   },
+   props: {
+      nightMode: {
+         type: Boolean,
+         require: true,
+      }
+   },
 }
 </script>
 

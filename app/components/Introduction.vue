@@ -2,6 +2,12 @@
    const new_date = new Date(); 
    const age = new_date.getFullYear() - 2004;
    export default {
+      props: {
+         nightMode: {
+            type: Boolean,
+            require: true,
+         }
+      },
       data() {
          return {
             age: age,
@@ -24,7 +30,9 @@
 <template>
    <div class="flex justify-center items-center p-10 xl:mr-[230px] xl:ml-[-52px]">
       <img class="lg:mr-[40px] max-w-[240px] max-h-[360px] rounded hidden lg:block" src="/assets/Photo.jpg" alt="Photo" />
-      <div class="min-w-[360px] md:min-w-[660px] lg:max-w-[705px] min-h-[300px] mx-10 shadow-xl px-5 py-5 rounded flex flex-col bg-white">
+      <div class="min-w-[360px] md:min-w-[660px] lg:max-w-[705px] min-h-[300px] mx-10 shadow-2xl px-5 py-5 rounded flex flex-col bg-white" :class="{
+         'shadow-white shadow-lg': nightMode === true
+         }">
          <p class="text-2xl">Hello and welcome to my portfolio.</p>
          <hr>
          <div>
@@ -35,7 +43,8 @@
             </p>
             <br>
             <p class="text-md">
-               My Software Development experience is mostly in Front-end Development using React, from Haaga-Helia i have gotten experience using Java with Spring Boot to create Back-end services.
+               My Software Development experience is mostly in Front-end Development using React, from Haaga-Helia i have gotten experience using Java 
+               with Spring Boot to create Back-end services and knowledge of SQL design and development + Software testing.
             </p>
          </div>
          <div class="flex gap-4 justify-center items-center pt-2">
