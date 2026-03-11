@@ -1,13 +1,13 @@
 <template>
    <div :class="currentClass">
-      <img src="./assets/owlglow.svg" alt="owl svg" class="w-[100px] h-[200px] absolute top-[20%] left-[89%]" :class="{ hidden: !nightMode }"/>
-      <img src="./assets/customstarsglow.svg" alt="cluster of stars" class="w-[200px] h-[200px] absolute top-[10%] left-[77%]" :class="{ hidden: !nightMode }" />
+      <img src="./assets/owlglow.svg" alt="owl svg" class="w-[100px] h-[200px] absolute top-[20%] left-[80%] lg:left-[89%]" :class="{ hidden: !nightMode }"/>
+      <img src="./assets/customstarsglow.svg" alt="cluster of stars" class="w-[200px] h-[200px] absolute top-[10%] left-[5%] lg:left-[74%]" :class="{ hidden: !nightMode }" />
       <img src="./assets/Suproentextglow.svg" alt="Supr0en text" class="w-[450px] h-[200px] absolute top-[76%] left-[6%]" :class="{hidden: !nightMode}" />
    </div>
    <div id="app">
       <Header />
       <nuxt-page :nightMode="nightMode"/>
-      <button @click="toggleNightMode" class="fixed top-[950px] left-[1850px] w-[50px] h-[50px] border rounded-full"><img :src="buttonSideImageSrc" /></button>
+      <button @click="toggleNightMode" class="fixed top-[90.4%] lg:top-[92.7%] lg:top-[93.7%] xl:top-[94.7%] left-[91%] sm:left-[92.2%] md:left-[94.2%] lg:left-[96.2%] xl:left-[97.2%] w-[50px] h-[50px] border rounded-full"><img :src="buttonSideImageSrc" /></button>
       <Footer :nightMode="nightMode" />
    </div>
 </template>

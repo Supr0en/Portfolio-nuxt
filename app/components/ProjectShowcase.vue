@@ -42,7 +42,7 @@
 <template>
    <div class="flex flex-col justify-center items-center p-10">
       <h2 class="text-4xl" :class="{'text-white': nightMode === true}">Highlight projects</h2>
-      <button class="bg-gray-400 text-white px-4 py-1 rounded m-2 hover:bg-gray-200" @click="cycleFilter" >{{ currentFilter }}</button>
+      <button class="bg-gray-200 border-2 border-solid border-gray-400 px-4 py-1 rounded m-2 hover:bg-gray-100"@click="cycleFilter" >{{ currentFilter }}</button>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px] lg:gap-[52px]">
          <div v-for="project in filteredItems" :key="project.id" >
             <a :href="project.github" target="_blank" >

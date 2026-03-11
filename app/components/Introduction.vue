@@ -33,18 +33,17 @@
       <div class="min-w-[360px] md:min-w-[660px] lg:max-w-[705px] min-h-[300px] mx-10 shadow-2xl px-5 py-5 rounded flex flex-col bg-white" :class="{
          'shadow-white shadow-lg': nightMode === true
          }">
-         <p class="text-2xl">Hello and welcome to my portfolio.</p>
+         <p class="text-2xl my-2">Hello and welcome to my portfolio!</p>
          <hr>
          <div>
-            <p class="text-md">
-               I am {{ age - 1 }} year-old Software Developer with focus on web development from Vantaa, Finland.
-               Currently studying in Haaga-Helia University of Applied Science, before it graduated from Business College Helsinki as Software Developer (Web development) <br>
-               and completed military service.
+            <p class="text-md my-2">
+               I am a {{ age - 1 }}-year-old Software Developer specializing in web development from Vantaa, Finland.
+               I am currently studying at Haaga-Helia University of Applied Sciences and previously graduated from Business College Helsinki with as a 
+               Software Developer (Web Development). i have also completed my military service.
             </p>
-            <br>
-            <p class="text-md">
-               My Software Development experience is mostly in Front-end Development using React, from Haaga-Helia i have gotten experience using Java 
-               with Spring Boot to create Back-end services and knowledge of SQL design and development + Software testing.
+            <p class="text-md my-2">
+               My experience in Software Development primary involves front-end development using React. Through my studies at Haaga-Helia, i have gained 
+               experience using Java with Spring Boot for creating Back-end services, as well as knowledge of SQL design and development and Software testing.
             </p>
          </div>
          <div class="flex gap-4 justify-center items-center pt-2">
