@@ -58,7 +58,7 @@
          </div>
          <br>
          <hr class="border-1 border-black">
-         <p>Date: 8.3.2026</p>
+         <p>Date: 22.3.2026</p>
       </div>
       <div class="h-fit w-[100vw] sm:h-[1123px] sm:w-[794px] shadow flex flex-col py-4 px-12 sm:py-8 sm:px-24 mb-10 mt-4 bg-white" :class="{'shadow-white': nightMode}">
          <div id="header" class="sm:grid sm:grid-cols-2 sm:grid-rows-4">
@@ -87,12 +87,12 @@
             <div class="lg:w-[60%] ml-1/2 float-right lg:grid lg:grid-cols-2 mb-3">
                <p>Primary School</p>             <p>- Otalammen peruskoulu</p>
                <p>Vocational school </p>             <p>- Business College Helsinki</p>
-               <p>Swedish</p>             <p>- Haaga-Helia University of Applied Sciences</p> 
+               <p>University of Applied Sciences</p>             <p>- Haaga-Helia University of Applied Sciences</p> 
             </div>
          </div>
          <br>
          <hr class="border-1 border-black">
-         <p>Date: 8.3.2026</p>
+         <p>Date: 22.3.2026</p>
       </div>
    </div>
 
